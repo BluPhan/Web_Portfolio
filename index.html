@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmanuels Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="/">Emmanuel M</a>
+      <nav>
+        <a target="_blank" href="https://github.com/BluPhan"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=61575851100859"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="intro-header">
+          <h1>こんにちは!! I'm Emmanuel</h1>
+          <p>Software Developer</p>
+        </div>
+        <h5 class="intro-description">
+          A computer scientist by qualification, and an artist, cyber security
+          specialist, cloud computing personnel, and software developer by
+          trade. Based in Canada, I love to exercise, play video games, make
+          art, and build fun useful internet applications!
+        </h5>
+        <div class="links-container">
+          <i class="fa-solid link-arrow fa-arrow-right"></i>
+          <a href="mailto:bluphantom844@gmail.com"> Email me</a>
+          <a target="_blank" href="https://github.com/BluPhan">GitHub</a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=61575851100859"
+            >Facebook</a
+          >
+        </div>
+
+        <div id="play-game">
+          <button onclick="playGame()">Care for a trial of wits??</button>
+        </div>
+        <div style="display: none" class="color-div">
+          <h4>Select thy choosen shade</h4>
+          <p style="display: none">
+            Magnificient!... Thou hath made a most notable wreck😀
+          </p>
+          <input
+            type="color"
+            id="color-picker"
+            onchange="changeColor()"
+            value="#0084ff"
+          />
+          <button style="display: none" onclick="resetColor()">Restore</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Technologies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JavaScript</td>
+              <td>ReactJS | NodeJS | NextJS</td>
+            </tr>
+            <tr>
+              <td>Cyber Security</td>
+              <td>
+                Incident Reponse | Threat Intelligence | Vulnerability and Risk
+                Management
+              </td>
+            </tr>
+            <tr>
+              <td>Cloud Computing</td>
+              <td>Cloud Platforms | Virtualization</td>
+            </tr>
+            <tr>
+              <td>Design</td>
+              <td>Canva | Krita | Clip studio Paint | Coral Draw</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Lastest Projects</h2>
+        <div class="cards-grid">
+          <div class="project-card">
+            <div>
+              <p>2 Jan, 2026</p>
+              <h4>GetFit</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>ReactJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>FantaCSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>JavaScript</p>
+                </div>
+              </div>
+            </div>
+            <p>
+              The Simple 30 Day Workout Program Complete this training program
+              if you want to ... follow a simple program with guarenteed results
+              Get fit, healthy, strong and shredded Learn more about gym,
+              training and technique Become a lifetime gym bro 💪
+            </p>
+            <div class="project-links">
+              <a target="_blank" href="https://getfit-plan.netlify.app/"
+                >Live</a
+              >
+              <a target="_blank" href="https://github.com/BluPhan/2_getfit"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="img-div">
+            <img
+              class="big-img"
+              src="/1_web_portfolio/public/getfit-plan.netlify.app.png"
+              alt="bluphan-thumbnail"
+            />
+          </div>
+
+          <div class="project-card">
+            <div>
+              <p>10 Jan, 2026</p>
+              <h4>Blustore</h4>
+              <div class="tech-list">
+                <div class="card-button-secondary">
+                  <p>NextJS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>FantaCSS</p>
+                </div>
+                <div class="card-button-secondary">
+                  <p>Stripe</p>
+                </div>
+              </div>
+            </div>
+            <p>A wonderful store for programmers and productivity!</p>
+            <div class="project-links">
+              <a
+                target="_blank"
+                href="https://main.d2aiscs2700ibi.amplifyapp.com"
+                >Live</a
+              >
+              <a target="_blank" href="https://github.com/BluPhan/3-blustore"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="img-div">
+            <img
+              class="big-img"
+              src="/1_web_portfolio/public/main.d2aiscs2700ibi.amplifyapp.com.png"
+              alt="bluphan-thumbnail"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        By <a href="https://www.bluphan.com" target="_blank">BluPhan</a> ⭐ the
+        repo on
+        <a target="_blank" href="">GitHub</a>
+      </p>
+    </footer>
+    <script>
+      // This is where we create the interactivity for our little color switching game
+
+      // 1. select all the html elements so that we can later manipulate them
+      const body = document.querySelector("body");
+      const colorInput = document.getElementById("color-picker");
+      const colorDiv = document.querySelector(".color-div");
+      const hiddenText = document.querySelector(".color-div p");
+      const resetBtn = document.querySelector(".color-div button");
+      const playBtn = document.getElementById("play-game");
+
+      // 2. create the functions
+
+      function playGame() {
+        // this function enables the play of the game by showing the color selector input
+        colorDiv.style.display = "block";
+        playBtn.style.display = "none";
+      }
+
+      function changeColor() {
+        // take the users selected color on the input, and assign it to be the background color of the website
+        const selectedColor = colorInput.value;
+        body.style.background = selectedColor;
+        resetBtn.style.display = "block";
+        hiddenText.style.display = "block";
+        colorInput.style.display = "none";
+      }
+
+      function resetColor() {
+        body.style.background = "white";
+        colorInput.style.display = "block";
+        playBtn.style.display = "block";
+
+        hiddenText.style.display = "none";
+        resetBtn.style.display = "none";
+        colorDiv.style.display = "none";
+      }
+
+      // 3. is to assign the functions to the buttons by adding them function call to the actual elements (done above in the html code)
+    </script>
+  </body>
+</html>
